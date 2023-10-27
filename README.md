@@ -1,4 +1,4 @@
-# Multi-robot-genetic-task-planner for inspection and monitoring
+# Multi-Robot Genetic Task Planner for Inspection and Monitoring
 
 ----------------------------------------------------------------------------------
 
