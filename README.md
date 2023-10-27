@@ -12,6 +12,7 @@ To get started with the mission simulation, follow the steps below:
 2) Open MATLAB on your computer.
 3) Set the MATLAB current directory to the root folder of this project.
 4) Ensure that you have the following MATLAB functions in your workspace:
+   
 	* binarize_aerial_image
 	* compute_cost_matrix
 	* create_graph
@@ -53,10 +54,7 @@ The mission_planner_simulator function will use the loaded scenario to perform a
 
 You can create your own scenarios and customize the mission parameters by creating scenario files in the 'scenarios' directory. These scenario files should define the necessary variables and settings for the specific mission you want to simulate.
 
-...
-
 ## Reference
 
 1. H. Chakraa, E. Leclercq, F. Guérin and D. Lefebvre, "A Centralized Task Allocation Algorithm for a Multi-Robot Inspection Mission With Sensing Specifications," in IEEE Access, vol. 11, pp. 99935-99949, 2023, doi: 10.1109/ACCESS.2023.3315130.
 
-...
