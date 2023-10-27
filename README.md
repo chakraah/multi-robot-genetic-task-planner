@@ -49,8 +49,8 @@ The mission_planner_simulator function will use the loaded scenario to perform a
 
 **The project includes two data files:**
 
-*images: Contains aerial images for mission planning.
-*scenarios: Directory where you can store scenario files for different mission simulations (each scenario file in the 'scenarios' directory defines the parameters and setup for a specific mission simulation).
+* images: Contains aerial images for mission planning.
+* scenarios: Directory where you can store scenario files for different mission simulations (each scenario file in the 'scenarios' directory defines the parameters and setup for a specific mission simulation).
 
 You can create your own scenarios and customize the mission parameters by creating scenario files in the 'scenarios' directory. These scenario files should define the necessary variables and settings for the specific mission you want to simulate.
 
