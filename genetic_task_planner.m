@@ -113,7 +113,7 @@ for idxRobot = 1:numRobots
 end
 
 end
-%----------------------------------------------------------------------------------
+
 function single_measure_tasks = decomposeMission(task_list, num_tasks)
 % decompTasks - Decompose the task_list to contain only one measurement per column.
 % The number of columns corresponds to the number of tasks to be performed.
@@ -149,7 +149,7 @@ end
 single_measure_tasks = task_list(:, 2:end);
 
 end
-%----------------------------------------------------------------------------------
+
 function suitable_robots = identifySuitableRobots(single_measure_tasks, robot_list, num_tasks)
 % Determine the robots that can perform measurements based on the tasks
 
@@ -182,7 +182,7 @@ for task_idx = 1:num_tasks
 end
 
 end
-%----------------------------------------------------------------------------------
+
 function initial_population = initializePopulation(population_size, suitable_robots, num_tasks)
 % initialize_population - Initializes a population of candidate solutions
 % Inputs:
@@ -223,7 +223,7 @@ for candidate_idx = 1:population_size
 end
 
 end
-%----------------------------------------------------------------------------------
+
 function candidate_sequence = generateSequence(candidate, num_tasks, num_robots)
 % generate_sequence - Generates a sequence of tasks to robots from a given chromosome candidate.
 % Inputs:
@@ -259,7 +259,7 @@ for robot_idx = 1:num_robots
 end
 
 end
-%----------------------------------------------------------------------------------
+
 function [total_cost, robot_costs] = computeCost(candidate_sequence, cost_matrix, num_robots, objective_function)
 % computeCost - Calculate the cost of a given allocation sequence of tasks
 % Inputs:
@@ -301,7 +301,7 @@ if objective_function == 1
 end
 
 end
-%----------------------------------------------------------------------------------
+
 function fitness_values = calculateFitness(population, population_size, cost_matrix, num_tasks, num_robots, objective_function)
 % calculateFitness - Calculate the fitness value for each individual in the population
 % Inputs:
@@ -326,7 +326,7 @@ for individual_idx = 1:size(population, 2)
 end
 
 end
-%--------------------------------------------------------------------------
+
 function selected_population = selection(population, fitness_values, num_selected)
 % selection - Select the best num_selected individuals from population
 % Inputs:
@@ -345,7 +345,7 @@ sorted_population = population(idx);
 selected_population = sorted_population(1:num_selected);
 
 end
-%--------------------------------------------------------------------------
+
 function [offspring1, offspring2] = crossover(chromosome1, chromosome2, crossover_rate, num_genes)
 % crossover - Performs crossover between two chromosomes to produce two offspring
 % Inputs:
@@ -382,7 +382,7 @@ if rand() < crossover_rate
     offspring2(:,[selected_tasks(2) task_in_chromosome2]) = offspring2(:,[task_in_chromosome2 selected_tasks(2)]);
 end
 end
-%----------------------------------------------------------------------------------
+
 function mutated_chromosome = mutation(chromosome, mutation_rate, robot_list, num_genes)
 % mutation - Performs mutation of a chromosome
 % Inputs:
@@ -416,7 +416,7 @@ if rand() < mutation_rate
 end
 
 end
-%----------------------------------------------------------------------------------
+
 function new_population = reproduction(population, population_size, crossover_rate, num_tasks)
 % reproduction - Generates a new population by crossing pairs of parents
 % Inputs:
@@ -448,7 +448,7 @@ for pair_idx = 1:2:population_size
 end
 
 end
-%----------------------------------------------------------------------------------
+
 function traceSequence(cost_matrix, sites_coordinates, maxX, maxY, sequence)
 % traceSequence - traces a sequence of visits for a robot
 % Inputs:
