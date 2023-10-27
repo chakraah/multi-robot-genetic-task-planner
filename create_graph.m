@@ -64,7 +64,7 @@ elapsed_time = toc;
 fprintf('Graph creation took %.4f seconds.\n', elapsed_time);
 
 end
-%----------------------------------------------------------------------------------
+
 function node = convertCoordinatesToNode(xCoord, yCoord, numColumns)
 % Convert x and y coordinates to graph node
 % Inputs:
@@ -77,7 +77,7 @@ function node = convertCoordinatesToNode(xCoord, yCoord, numColumns)
 % Calculate the node index based on the coordinates and number of columns
 node = (yCoord - 1) * numColumns + xCoord;
 end
-%----------------------------------------------------------------------------------
+
 function [xCoord, yCoord] = convertNodeToCoordinates(node, numColumns)
 % Convert graph node to x and y coordinates
 % Inputs:
@@ -96,7 +96,7 @@ if (xCoord == 0)
     xCoord = numColumns;
 end
 end
-%----------------------------------------------------------------------------------
+
 function neighbors = getNeighbors(xCoord, yCoord, numColumns, numRows)
 % Get neighboring nodes of a given node
 % Inputs:
