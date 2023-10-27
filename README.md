@@ -6,7 +6,7 @@ This MATLAB project is designed to simulate a multi-robot mission for inspection
 
 # Getting Started
 
-To get started with the mission simulation, follow the steps below:
+**To get started with the mission simulation, follow the steps below:**
 
 1) Clone or download this Git repository to your local machine.
 2) Open MATLAB on your computer.
