@@ -26,7 +26,7 @@ This MATLAB project is designed to simulate a multi-robot mission for inspection
 load('scenarios/scenario');
 ```
 
-Launch the mission planner simulator using the following command:
+**Launch the mission planner simulator using the following command:**
 
 ```bash
 mission_planner_simulator(scenario);
