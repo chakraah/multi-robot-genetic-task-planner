@@ -59,7 +59,7 @@ elapsed_time = toc;
 fprintf('Trajectories planning %.4f seconds.\n', elapsed_time);
 
 end
-%----------------------------------------------------------------------------------
+
 function [xCoord, yCoord] = convertNodeToCoordinates(node, numColumns)
 % Convert graph node to x and y coordinates
 % Inputs:
