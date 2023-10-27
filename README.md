@@ -1,8 +1,6 @@
-# Multi-robot-genetic-task-planner
+# Multi-robot-genetic-task-planner for inspection and monitoring
 
 ----------------------------------------------------------------------------------
-
-# Multi-robot inspection and monitoring
 
 This MATLAB project is designed to simulate a multi-robot mission for inspection and monitoring. The project consists of considering a multiple mobile robots mission where each robot is equipped with specific sensors to perform measurements that are spatially distributed in different positions of an industrial environment. In this README, we'll provide instructions on how to use the project and perform mission simulations.
 
