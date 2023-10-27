@@ -38,7 +38,7 @@ elapsed_time = toc;
 fprintf('Cost matrix computation took %.4f seconds.\n', elapsed_time);
 
 end
-%----------------------------------------------------------------------------------
+
 function [shortestPath, shortestPathCost] = dijkstraAlgorithm(costMatrix, source, destination, numObstacles)
 % Implementation of Dijkstra's algorithm to find the shortest path
 % between two nodes in a graph with positive edge weights.
@@ -89,7 +89,7 @@ end
 
 shortestPathCost = distances(destination);
 end
-%----------------------------------------------------------------------------------
+
 function node = convertCoordinatesToNode(xCoord, yCoord, numColumns)
 % Convert x and y coordinates to graph node
 % Inputs:
