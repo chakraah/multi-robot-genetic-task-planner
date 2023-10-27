@@ -19,7 +19,8 @@ This MATLAB project is designed to simulate a multi-robot mission for inspection
 	* genetic_task_planner
 	* trajectories_planner
 	* mission_planner_simulator
-	* Load a scenario by using the load function in MATLAB. Replace "scenario" with the name of the scenario you want to use:
+
+**Load a scenario by using the load function in MATLAB. Replace "scenario" with the name of the scenario you want to use:**
 
 ```bash
 load('scenarios/scenario');
